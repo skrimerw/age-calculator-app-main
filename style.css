@@ -1,0 +1,142 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width:auto;
+    padding: 20px;
+    background-color: hsl(0, 0%, 94%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+    border-bottom-right-radius: 150px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inputs {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.hr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsl(0, 0%, 86%);
+    margin: 50px 0;
+    height: 1px;
+    width: 100%;
+    outline: none;
+}
+
+input {
+    font-size: 1.7rem;
+    padding: 15px 20px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 10px;
+    margin-right: 20px;
+    caret-color: hsl(259, 100%, 65%);
+}
+
+input:focus {
+    border-color: hsl(259, 100%, 65%);
+    outline: none;
+}
+
+#year-input {
+    margin: 0;
+}
+
+span {
+    display: block;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.arrow {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 13px;
+    box-sizing: content-box;
+    transition: background-color .3s ease-in-out 50ms;
+}
+
+.arrow:hover {
+    background-color:hsl(0, 0%, 8%);
+}
+
+.purple {
+    color: hsl(259, 100%, 65%);
+    margin-right: 15px;
+}
+
+h1 {
+    display: flex;
+    font-size: 4rem;
+}
+
+.error-span {
+    color: hsl(0, 100%, 67%);
+}
+
+.error-message {
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+}
+
+.error-input {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1040px) {
+    .hr {
+        justify-content: end;
+    }
+
+    .arrow {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .inputs {
+        width: 75%;
+    }
+}
