@@ -105,11 +105,13 @@ h1 {
 
 .error-span {
     color: hsl(0, 100%, 67%);
+    font-size: .7rem;
 }
 
 .error-message {
     color: hsl(0, 100%, 67%);
     font-style: italic;
+    font-size: .7rem;
 }
 
 .error-input {
@@ -150,5 +152,10 @@ h1 {
 
     main {
         padding: 40px;
+    }
+
+    .error-message, 
+    .error-span {
+        font-size: initial;
     }
 }
